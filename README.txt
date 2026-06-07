@@ -1,14 +1,11 @@
-ShaneMobilez website
+ShaneMobilez website update
 
-Deploy instructions:
-1. Upload all files and the assets folder to GitHub.
-2. Connect or redeploy the project on Vercel.
-3. Open the site in a private/incognito tab to avoid cached old CSS or images.
+Updated hero section:
+- Replaced weak product-box hero with ShaneMobilez portrait hero.
+- Added hero photo asset: assets/shane-hero-photo.webp
+- Kept the light premium layout and full price list.
+- Product image mapping remains by model family.
+- Mobile layout is stacked and safe, with no cut-off hero card.
 
-Contact details included:
-- Address: Corner Angwa and Nelson Mandela, Harare CBD
-- WhatsApp/Phone: 0788278675
-- Email: shanemaruta2003@gmail.com
-
-Image rule:
-Product images are mapped by model family. Pro and Pro Max share the same image. Plus and normal models share the same family image where appropriate.
+Deploy:
+Replace the repo files/folders with these contents, commit, and wait for Vercel redeploy.

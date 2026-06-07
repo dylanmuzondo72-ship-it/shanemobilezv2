@@ -779,3 +779,218 @@ footer {
     text-align: center;
   }
 }
+
+/* SHANE PERSON HERO UPDATE */
+.hero {
+  padding: 70px 0 46px;
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 510px);
+  gap: clamp(34px, 6vw, 72px);
+}
+
+.hero h1 {
+  max-width: 720px;
+  font-size: clamp(46px, 5.4vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.hero-visual {
+  position: relative;
+  width: 100%;
+  max-width: 510px;
+  min-height: 590px;
+  justify-self: end;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  inset: 54px 22px 18px;
+  z-index: -3;
+  border-radius: 46px;
+  background:
+    radial-gradient(circle at 20% 16%, rgba(106, 92, 255, 0.16), transparent 35%),
+    radial-gradient(circle at 84% 20%, rgba(19, 138, 91, 0.13), transparent 32%),
+    linear-gradient(145deg, #ffffff 0%, #eef8f3 100%);
+  border: 1px solid rgba(17, 24, 39, 0.07);
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 999px;
+  z-index: -2;
+  filter: blur(2px);
+}
+
+.hero-orb-one {
+  width: 230px;
+  height: 230px;
+  right: 4px;
+  top: 24px;
+  background: rgba(106, 92, 255, 0.12);
+}
+
+.hero-orb-two {
+  width: 260px;
+  height: 260px;
+  left: -12px;
+  bottom: 18px;
+  background: rgba(19, 138, 91, 0.10);
+}
+
+.hero-person-card {
+  width: min(88%, 430px);
+  height: 548px;
+  overflow: hidden;
+  border-radius: 38px;
+  border: 10px solid #ffffff;
+  background: #ffffff;
+  box-shadow: 0 30px 76px rgba(15, 23, 42, 0.18);
+  transform: rotate(-1.2deg);
+}
+
+.hero-person-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 24%;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+.hero-mini-card {
+  position: absolute;
+  z-index: 4;
+  display: grid;
+  gap: 2px;
+  min-width: 150px;
+  padding: 13px 16px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.13);
+  backdrop-filter: blur(14px);
+}
+
+.hero-mini-card span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-mini-card strong {
+  color: #101828;
+  font-size: 16px;
+  font-weight: 950;
+}
+
+.hero-mini-top {
+  right: 0;
+  top: 92px;
+}
+
+.hero-mini-bottom {
+  left: 0;
+  bottom: 78px;
+}
+
+@media (max-width: 1040px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    justify-self: center;
+    order: 1;
+    min-height: 560px;
+  }
+
+  .hero-copy {
+    order: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 24px 0 24px;
+  }
+
+  .hero-grid {
+    gap: 24px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 430px;
+    max-width: 100%;
+  }
+
+  .hero-visual::before {
+    inset: 34px 8px 10px;
+    border-radius: 32px;
+  }
+
+  .hero-orb-one {
+    width: 170px;
+    height: 170px;
+    right: 4px;
+    top: 14px;
+  }
+
+  .hero-orb-two {
+    width: 170px;
+    height: 170px;
+    left: 0;
+    bottom: 18px;
+  }
+
+  .hero-person-card {
+    width: min(82vw, 330px);
+    height: 398px;
+    border-radius: 30px;
+    border-width: 8px;
+    transform: rotate(-0.7deg);
+  }
+
+  .hero-person-card img {
+    object-position: 50% 20%;
+  }
+
+  .hero-mini-card {
+    min-width: 128px;
+    padding: 10px 12px;
+    border-radius: 16px;
+  }
+
+  .hero-mini-card span {
+    font-size: 9px;
+  }
+
+  .hero-mini-card strong {
+    font-size: 13px;
+  }
+
+  .hero-mini-top {
+    right: 4px;
+    top: 50px;
+  }
+
+  .hero-mini-bottom {
+    left: 4px;
+    bottom: 48px;
+  }
+
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 48px);
+    line-height: 1;
+  }
+}
