@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="ShaneMobilez sells brand new boxed iPhones in Harare CBD with free delivery. View updated iPhone prices and order on WhatsApp." />
   <title>ShaneMobilez | Brand New Boxed iPhones</title>
-  <link rel="preconnect" href="https://www.google.com" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,6 +13,7 @@
       <a href="#home" class="brand" aria-label="ShaneMobilez home">
         <img src="assets/shanemobilez-logo.png" alt="ShaneMobilez logo" />
       </a>
+
       <div class="nav-links">
         <a href="#phones">iPhones</a>
         <a href="#delivery">Delivery</a>
@@ -24,21 +24,27 @@
   </header>
 
   <main id="home">
-    <section class="hero">
+    <section class="hero" aria-label="ShaneMobilez hero section">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">BRAND NEW BOXED • HARARE CBD</p>
-          <h1>Premium iPhones, clear prices, free delivery.</h1>
-          <p class="lead">Shop iPhone 11 to iPhone 16 series from ShaneMobilez. Pick your model, confirm availability, and order directly on WhatsApp.</p>
+          <p class="eyebrow">Brand New Boxed • Harare CBD</p>
+          <h1>Brand New Boxed iPhones</h1>
+          <p class="lead">Shop iPhone 11 to iPhone 16 from ShaneMobilez. Clear prices, free delivery, and direct WhatsApp ordering.</p>
+
           <div class="hero-actions">
-            <a class="btn primary" href="https://wa.me/263788278675?text=Hi%20ShaneMobilez%2C%20I%20want%20to%20order%20an%20iPhone.%20Is%20it%20available%3F" target="_blank" rel="noopener">Order on WhatsApp</a>
-            <a class="btn secondary" href="#phones">View price list</a>
+            <a class="btn primary" href="#phones">View Price List</a>
+            <a class="btn secondary" href="https://wa.me/263788278675?text=Hi%20ShaneMobilez%2C%20I%20want%20to%20order%20an%20iPhone.%20Is%20it%20available%3F" target="_blank" rel="noopener">Order on WhatsApp</a>
           </div>
         </div>
-        <div class="hero-card" aria-label="Featured iPhones">
-          <img class="hero-phone hero-phone-one" src="assets/iphone-16-pro.webp" alt="iPhone 16 Pro" />
-          <img class="hero-phone hero-phone-two" src="assets/iphone-15-pro.webp" alt="iPhone 15 Pro" />
-          <img class="hero-phone hero-phone-three" src="assets/iphone-14-pro.webp" alt="iPhone 14 Pro" />
+
+        <div class="hero-visual" aria-label="Featured iPhone">
+          <div class="hero-product-card">
+            <img src="assets/iphone-16-pro.webp" alt="iPhone 16 Pro at ShaneMobilez" />
+            <div class="hero-badge">
+              <span>From</span>
+              <strong>$760</strong>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -52,9 +58,9 @@
 
     <section class="section container">
       <div class="section-head">
-        <p class="eyebrow">TOP PICKS</p>
+        <p class="eyebrow">Top Picks</p>
         <h2>Featured deals</h2>
-        <p>Quick options from every budget tier before the full price list. Because apparently scrolling through everything is now a sport.</p>
+        <p>Quick options from the main price list before customers browse every model.</p>
       </div>
       <div class="featured-grid" id="featuredGrid"></div>
     </section>
@@ -62,10 +68,11 @@
     <section class="section container" id="phones">
       <div class="section-head price-head">
         <div>
-          <p class="eyebrow">FULL PRICE LIST</p>
+          <p class="eyebrow">Full Price List</p>
           <h2>Brand New Boxed iPhones</h2>
-          <p>Grouped by model so the website stays fast and the prices stay easy to update.</p>
+          <p>Grouped by model, with storage options listed clearly under each phone.</p>
         </div>
+
         <label class="search-box">
           <span>Search</span>
           <input id="searchInput" type="search" placeholder="Search iPhone 15 Pro..." />
@@ -79,7 +86,7 @@
 
     <section class="section container split" id="location">
       <div class="contact-card">
-        <p class="eyebrow">VISIT OR ORDER</p>
+        <p class="eyebrow">Visit or Order</p>
         <h2>ShaneMobilez</h2>
         <p><strong>Address:</strong> Corner Angwa and Nelson Mandela, Harare CBD</p>
         <p><strong>Phone / WhatsApp:</strong> <a href="tel:+263788278675">0788278675</a></p>
@@ -90,6 +97,7 @@
           <a class="btn secondary" href="tel:+263788278675">Call now</a>
         </div>
       </div>
+
       <div class="map-card">
         <iframe title="Map to Corner Angwa and Nelson Mandela, Harare" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Corner%20Angwa%20and%20Nelson%20Mandela%2C%20Harare%2C%20Zimbabwe&output=embed"></iframe>
       </div>
